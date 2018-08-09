@@ -1,7 +1,7 @@
 exports.config = {
     // directConnect: true,
     framework: 'jasmine2',
-    seleniumAddress: 'http://localhost:3000',
+    seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['../specs/testAllure.js'],
     // specs: ['../specs/testMatchers.js'],
     suites: {
