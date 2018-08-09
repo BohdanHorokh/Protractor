@@ -9,13 +9,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install -g npm@latest'
-                sh 'protractor --version'
+                sh 'npm install'
             }
         }
         stage('Test') {
             steps {
-                sh 'protractor --version'
                 sh 'protractor ./configs/conf.js'
             }
         }
