@@ -11,7 +11,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'npm test'
+                sh 'webdriver-manager start'
+                sh 'protractor ./configs/conf.js'
             }
         }
         // stage('Deploy') {
