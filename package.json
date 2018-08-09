@@ -5,7 +5,7 @@
   "description": "A demo app with Protractor tests",
   "scripts": {
     "start": "node app/expressserver.js",
-    "pretest": "rmdir allure-report /s",
+    // "pretest": "rmdir allure-report /s",
     "test": "./node_modules/.bin/protractor ./configs/conf.js",
     "smoke-test": "./node_modules/.bin/protractor ./configs/conf.js --suite smoke",
     "locator-test": "./node_modules/.bin/protractor ./configs/conf.js --suite locatorsmodel",

@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'npm test'
+                sh 'protractor ./configs/conf.js'
             }
         }
         // stage('Deploy') {
