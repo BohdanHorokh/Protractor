@@ -8,13 +8,15 @@ pipeline {
 
     stages {
         stage('check tools') {
+            steps {
                 sh "node -v"
                 sh "npm -v"
             }
+        }
 
         stage('Build') {
             steps {
-                sh 'npm test'
+                sh 'npm install'
             }
         }
         stage('Test') {
